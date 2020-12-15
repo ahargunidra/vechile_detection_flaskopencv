@@ -11,6 +11,6 @@ app.config['MYSQL_DB'] = 'websitedishub'
 
 mysql = MySQL(app)
 
-cur = mysql.connection.cursor()
+# cur = mysql.connection.cursor()
 
 from vechile_counter import routes

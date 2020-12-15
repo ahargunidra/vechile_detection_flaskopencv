@@ -9,7 +9,7 @@ import imutils
 import time
 import dlib
 from time import sleep
-from vechile_counter import app, mysql, cur
+from vechile_counter import app, mysql
 
 rectangle_min = 80
 altura_min = 80
@@ -32,18 +32,18 @@ class vechile():
     def set_info(self,detec):
         global car, global_frame
         f = open("Data.txt", "w")
-        print("THIS IS CUR :", cur)
+        # print("THIS IS CUR :", cur)
         for (x, y) in detec:
             if (pos_line + offset) > y > (pos_line - offset):
                 car += 1
                 cv2.line(global_frame, (25, pos_line), (1200, pos_line), (0, 127, 255), 3)
                 detec.remove((x, y))
                 print("Car detection: " + str(car))
-        f.write("DATA KENDARAAN : "+str(car))
-        cur.execute("INSERT INTO tbl_kendaraan(lokasi,jml_kendaraan) VALUES (%s, %s)", "Tangerang", str(car))
-        mysql.connection.commit()
+        f.write("DATA KENDARAAN : " + str(car))
+        # cur.execute("INSERT INTO tbl_kendaraan(lokasi,jml_kendaraan) VALUES (%s, %s)", "Tangerang", str(car))
+        # mysql.connection.commit()
         f.close()
-        cursor.close()
+        # cursor.close()
     def show_info(self, frame1, dilated):
         global car
         text = f'Car: {car}'
