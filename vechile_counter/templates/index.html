@@ -25,34 +25,19 @@
       <label class="logo">DesignX</label>
       <ul>
         <li><a href="">Dashboard</a></li>
-        <li><a href="">Live Camera</a></li>
         <li><a href="">Laporan</a></li>
         <li><a href="">Logout</a></li>
       </ul>
     </nav>
+    <br>
+    <br>
     <h1 class="judul">VIDEO STREAM</h1>
+    <br>
+    <br>
     <img class ="streaming" src="{{ url_for('video_feed') }}">
     <main class="main-area">
       <div class="centered">
-        <section class="cards">
-          <article class="card">
-              <div class="card-content">
-                <h2 class="font_dua">Jumlah Kendaraan Melintas Ke Utara</h2>                
-              </div>
-              <h2 class="font_jumlah_dua">{{carCount}}</h2>
-              <!-- .card-content -->
-          </article>
-          <!-- .card -->
-
-          <article class="card">
-              <div class="card-content">
-                <h2 class="font_satu">Jumlah Kendaraan Melintas ke Selatan</h2>
-              </p>
-            </div>
-            <!-- .card-content -->
-          <h2 class="font_jumlah_satu">100</h2>
-          </article>
-          <!-- .card -->
+        
     </main>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

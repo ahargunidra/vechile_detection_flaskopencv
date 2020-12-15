@@ -9,7 +9,7 @@ import imutils
 import time
 import dlib
 from time import sleep
-
+from vechile_counter import app, mysql, cur
 
 rectangle_min = 80
 altura_min = 80
@@ -32,6 +32,7 @@ class vechile():
     def set_info(self,detec):
         global car, global_frame
         f = open("Data.txt", "w")
+        print("THIS IS CUR :", cur)
         for (x, y) in detec:
             if (pos_line + offset) > y > (pos_line - offset):
                 car += 1
@@ -39,7 +40,10 @@ class vechile():
                 detec.remove((x, y))
                 print("Car detection: " + str(car))
         f.write("DATA KENDARAAN : "+str(car))
+        cur.execute("INSERT INTO tbl_kendaraan(lokasi,jml_kendaraan) VALUES (%s, %s)", "Tangerang", str(car))
+        mysql.connection.commit()
         f.close()
+        cursor.close()
     def show_info(self, frame1, dilated):
         global car
         text = f'Car: {car}'
@@ -47,7 +51,7 @@ class vechile():
 
     def vechile_counting(self):
         car = caminhoes = 0
-        cap = cv2.VideoCapture('video1.mp4')
+        cap = cv2.VideoCapture('vechile_counter/video1.mp4')
         subtract = cv2.bgsegm.createBackgroundSubtractorMOG()  # Take the bottom and subtract from what's moving
         while True:
             ret, frame1 = cap.read()  # Takes each frame of the video
