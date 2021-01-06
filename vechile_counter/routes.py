@@ -5,13 +5,17 @@ from vechile_counter import app, mysql
 
 @app.route("/video_feed", methods=['GET'])
 def video_feed():
-
-    """Video streaming route. Put this in the src attribute of an img tag."""
-    global car, global_frame
+    global car_down, car_up, global_frame, readAbleCar
+    
+    readAbleCar = None 
     v = car_counting.vechile()
     return Response(v.vechile_counting(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/')
 def index():
+    cur = mysql.connection.cursor()
+    # cur.execute("INSERT INTO tbl_kendaraan(lokasi,jml_kendaraan) VALUES (%s, %s)", "Tangerang", str(car))
+    # mysql.connection.commit()
+
     return render_template('index.html')
