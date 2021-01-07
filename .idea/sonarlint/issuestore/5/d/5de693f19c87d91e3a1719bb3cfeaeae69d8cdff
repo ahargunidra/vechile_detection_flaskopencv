@@ -1,3 +1,9 @@
 
-?python:S1481"'Remove the unused local variable "cur".(÷ş“Ñ
-6python:S125"Remove this commented out code.(æ¿Ê‚
+tpython:S117"VRename this local variable "carUp" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı†ıÉ8ñäæØí.
+tpython:S117"VRename this local variable "carUp" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı†ıÉ8ÂßÙí.
+Jpython:S1481"+Remove the unused local variable "carDown".(ëŠçü8ÉßˆÙí.
+6python:S125"Remove this commented out code.(æ¿Ê‚
+vpython:S117"XRename this local variable "carDown" to match the regular expression ^[_a-z][a-z0-9_]*$.(ëŠçü8ñäæØí.
+vpython:S117"XRename this local variable "carDown" to match the regular expression ^[_a-z][a-z0-9_]*$.(ëŠçü8ÉßˆÙí.
+?python:S1481"'Remove the unused local variable "cur".(÷ş“Ñ
+vpython:S117"XRename this local variable "carDown" to match the regular expression ^[_a-z][a-z0-9_]*$.(ëŠçü8ÂßÙí.
