@@ -1,0 +1,6 @@
+
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(×å¯äúÿÿÿÿ
+]Web:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(ñ§½W
+OWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ïãÑ÷ùÿÿÿÿ8‚ÌÚí.
+NWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(Ş±­×8‚ÌÚí.
+SWeb:ImgWithoutAltCheck'"%Add an "alt" attribute to this image.(ƒÓ¶™úÿÿÿÿ8‚ÌÚí.
