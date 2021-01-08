@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response, request, session, redirect,url_for
+from flask import Flask, render_template, Response, request, session, redirect,url_for,flash
 from vechile_counter.ardi_utils import car_counting
 from vechile_counter import app, mysql
 import bcrypt
@@ -22,7 +22,7 @@ def index():
 def register():
     if request.method == 'GET':
         return render_template('register.html')
-    else:
+    elif request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
         password = request.form['password'].encode('utf-8')
@@ -34,7 +34,7 @@ def register():
         mysql.connection.commit()
         session['name'] = request.form['name']
         session['email'] = request.form['email']
-        return redirect(url_for('index'))
+        return redirect(url_for('login'))
 
 @app.route('/login', methods=["GET","POST"])
 def login():
@@ -45,7 +45,10 @@ def login():
         curl.execute("SELECT * FROM tbl_user WHERE email = %s", (email,))
         user = curl.fetchone()
         curl.close()
-        if len(user) > 1:
+        print("EMAIL : ", email)
+        print("PASS : ", password)
+        print("USER : ", user)
+        if user != None :
             if bcrypt.hashpw(password, user['password'].encode('utf-8')) == user['password'].encode('utf-8'):
                 session['name'] = user['name']
                 session['email'] = user['email']
@@ -53,7 +56,7 @@ def login():
             else:
                 return "Password/Username salah"
         else:
-            return 'User tidak di temukan'
+            return "User tidak di temukan"
     else:
         return render_template("login.html")
 

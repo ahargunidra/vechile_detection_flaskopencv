@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f137367b-a6af-49c2-b35a-70725fcc16cd" name="Default Changelist" comment="" />
+    <list default="true" id="f137367b-a6af-49c2-b35a-70725fcc16cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vechile_counter/static/js/particle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1ba6203d0bf685773173715f82433182f69fe986" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20572fc4b2b8ed7c214fd004ea8ef2be970e5180" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/991b0d6e0eb83dfc5e5d037bd91e9df2e32df63d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vechile_counter/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/vechile_counter/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vechile_counter/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/vechile_counter/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vechile_counter/static/js/dataCar.js" beforeDir="false" afterPath="$PROJECT_DIR$/vechile_counter/static/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vechile_counter/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vechile_counter/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vechile_counter/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/vechile_counter/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vechile_counter/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/vechile_counter/templates/register.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +25,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -30,7 +44,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PROJECT_PROGRAM\SKRIPSI\vechile_counter\static" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,6 +67,8 @@
       <workItem from="1609998363988" duration="3419000" />
       <workItem from="1610016466888" duration="145000" />
       <workItem from="1610016751854" duration="7150000" />
+      <workItem from="1610090226778" duration="8000" />
+      <workItem from="1610110825782" duration="7463000" />
     </task>
     <servers />
   </component>
